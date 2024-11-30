@@ -3,12 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Download</title>
+    <title>Files Repo</title>
 </head>
+<style>
+    body,html
+    {
+      background-color: rgb(32, 32, 32);
+      height:100vh;
+      width:100vw;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .actionBtn
+    {
+      width:clamp(250px,80vw,500px);
+      height:50px;
+      font-size:1.0rem;
+      padding: 0px;
+      margin:5px;
+    }
+    .actionBtn > a
+    {
+      text-decoration: none;
+      color:black;
+    }
+</style>
 <body>
-  <a id = "link" href="file.pptx" download="Henri's Principles" hidden>Download PPT</a>
+  <button class="actionBtn">
+    <a id = "link" href="files/henri.pptx" download="Henri's Principles">Download Henri's Principles</a>
+  </button>
+  <button class="actionBtn">
+    <a id = "link" href="files/software.pptx" download="Software Development">Download Software Development</a>
+  </button>
+  <button class="actionBtn">
+    <a id = "link" href="files/parts.pptx" download="Parts of Speech">Download Parts of Speech</a>
+  </button>
+  <button class="actionBtn">
+    <a id = "link" href="files/wordrush.docx" download="Wordrush Frontend Documentation">Download Wordrush Documentation</a>
+  </button>
 </body>
 <script>
-    document.getElementById("link").click();
 </script>
 </html>
